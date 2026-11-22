@@ -1,0 +1,31 @@
+[project]
+name = "fundamental-analysis-and-earnings-modeling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Arnold Atchoe", email = "kwameape123@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "datafun-toolkit>=1.0.0",
+    "dotenv>=0.9.9",
+    "duckdb>=2.0.0",
+    "edgar>=5.6.3",
+    "edgartools>=5.62.1",
+    "fastapi>=0.162.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pandas>=3.1.0",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.15.0",
+    "typing>=3.10.0.0",
+]
+
+[project.scripts]
+fundamental-analysis-and-earnings-modeling = "fundamental_analysis_and_earnings_modeling:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"

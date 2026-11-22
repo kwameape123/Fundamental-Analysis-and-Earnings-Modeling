@@ -1,0 +1,902 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='7f57c5624811768b12c2aea7a51b7db5959b6011477b2ecb7ac93ad74ee57400' _.fcp.WorkbookFingerprinting.true...creator-author-id='7f57c5624811768b12c2aea7a51b7db5959b6011477b2ecb7ac93ad74ee57400' _.fcp.WorkbookFingerprinting.true...creator-license-type='paid' _.fcp.WorkbookFingerprinting.true...creator-machine-id='7f57c5624811768b12c2aea7a51b7db5959b6011477b2ecb7ac93ad74ee57400' _.fcp.WorkbookFingerprinting.true...license-type='paid' _.fcp.WorkbookFingerprinting.true...machine-id='7f57c5624811768b12c2aea7a51b7db5959b6011477b2ecb7ac93ad74ee57400' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelRelationshipPerfOptions />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='all_analysis_data+ (main)' inline='true' name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='local' name='duckdb_jdbc.07ob9ma05ewqgd1fhrk6b0lp5k9y'>
+            <connection authentication='auth-none' class='duckdb_jdbc' dbname='fundamental_analysis' initialSQL='' one-time-sql='' schema='main' server='local' v-connection_string_file='D:\projects\Capstone Project\Fundamental-Analysis-and-Earnings-Modeling\data\database\fundamental_analysis.db' v-connection_string_md='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='duckdb_jdbc.07ob9ma05ewqgd1fhrk6b0lp5k9y' name='all_analysis_data' table='[fundamental_analysis].[main].[all_analysis_data]' type='table' />
+          <relation connection='duckdb_jdbc.07ob9ma05ewqgd1fhrk6b0lp5k9y' name='company_info' table='[fundamental_analysis].[main].[company_info]' type='table' />
+        </relation>
+        <cols>
+          <map key='[Cash_Conversion_Ratio]' value='[all_analysis_data].[Cash_Conversion_Ratio]' />
+          <map key='[Cost of Revenue]' value='[all_analysis_data].[Cost of Revenue]' />
+          <map key='[Cost_of_Revenue_Ratio]' value='[all_analysis_data].[Cost_of_Revenue_Ratio]' />
+          <map key='[Date]' value='[all_analysis_data].[Date]' />
+          <map key='[Free Cash Flow]' value='[all_analysis_data].[Free Cash Flow]' />
+          <map key='[Free_Cash_Flow_Ratio]' value='[all_analysis_data].[Free_Cash_Flow_Ratio]' />
+          <map key='[Gross Profit]' value='[all_analysis_data].[Gross Profit]' />
+          <map key='[Gross_Profit_Margin]' value='[all_analysis_data].[Gross_Profit_Margin]' />
+          <map key='[Interest Expense]' value='[all_analysis_data].[Interest Expense]' />
+          <map key='[Interest_Expense_Ratio]' value='[all_analysis_data].[Interest_Expense_Ratio]' />
+          <map key='[Net Income]' value='[all_analysis_data].[Net Income]' />
+          <map key='[Net_Profit_Margin]' value='[all_analysis_data].[Net_Profit_Margin]' />
+          <map key='[Operating Cash Flow]' value='[all_analysis_data].[Operating Cash Flow]' />
+          <map key='[Operating Expense]' value='[all_analysis_data].[Operating Expense]' />
+          <map key='[Operating Income]' value='[all_analysis_data].[Operating Income]' />
+          <map key='[Operating_Expense_Ratio]' value='[all_analysis_data].[Operating_Expense_Ratio]' />
+          <map key='[Operating_Profit_Margin]' value='[all_analysis_data].[Operating_Profit_Margin]' />
+          <map key='[Tax Provision]' value='[all_analysis_data].[Tax Provision]' />
+          <map key='[Tax_Provision_Ratio]' value='[all_analysis_data].[Tax_Provision_Ratio]' />
+          <map key='[Ticker (company_info)]' value='[company_info].[Ticker]' />
+          <map key='[Ticker]' value='[all_analysis_data].[Ticker]' />
+          <map key='[Total Revenue]' value='[all_analysis_data].[Total Revenue]' />
+          <map key='[company_name]' value='[company_info].[company_name]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticker]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Ticker</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Revenue]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Total Revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost of Revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cost of Revenue]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Cost of Revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross Profit</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gross Profit]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Gross Profit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Expense]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Operating Expense</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Income]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Operating Income</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest Expense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Interest Expense]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Interest Expense</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tax Provision</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Tax Provision]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Tax Provision</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Income</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Net Income]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Net Income</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gross_Profit_Margin</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Gross_Profit_Margin]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Gross_Profit_Margin</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating_Profit_Margin</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Operating_Profit_Margin]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Operating_Profit_Margin</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net_Profit_Margin</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Net_Profit_Margin]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Net_Profit_Margin</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cost_of_Revenue_Ratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Cost_of_Revenue_Ratio]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Cost_of_Revenue_Ratio</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating_Expense_Ratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Operating_Expense_Ratio]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Operating_Expense_Ratio</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interest_Expense_Ratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Interest_Expense_Ratio]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Interest_Expense_Ratio</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tax_Provision_Ratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Tax_Provision_Ratio]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Tax_Provision_Ratio</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating Cash Flow</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Operating Cash Flow]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Operating Cash Flow</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free Cash Flow</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Free Cash Flow]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Free Cash Flow</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>64</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cash_Conversion_Ratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Cash_Conversion_Ratio]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Cash_Conversion_Ratio</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free_Cash_Flow_Ratio</remote-name>
+            <remote-type>4</remote-type>
+            <local-name>[Free_Cash_Flow_Ratio]</local-name>
+            <parent-name>[all_analysis_data]</parent-name>
+            <remote-alias>Free_Cash_Flow_Ratio</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>24</precision>
+            <contains-null>true</contains-null>
+            <object-id>[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ticker</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Ticker (company_info)]</local-name>
+            <parent-name>[company_info]</parent-name>
+            <remote-alias>Ticker</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[company_info_0A8DA06014014D26980A54CF097B2ED3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company_name]</local-name>
+            <parent-name>[company_info]</parent-name>
+            <remote-alias>company_name</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <object-id>[company_info_0A8DA06014014D26980A54CF097B2ED3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Cash Conversion Ratio' datatype='real' name='[Cash_Conversion_Ratio]' role='measure' type='quantitative' />
+      <column caption='Cost of Revenue Ratio' datatype='real' name='[Cost_of_Revenue_Ratio]' role='measure' type='quantitative' />
+      <column datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+      <column caption='Free Cash Flow Ratio' datatype='real' name='[Free_Cash_Flow_Ratio]' role='measure' type='quantitative' />
+      <column caption='Gross Profit Margin' datatype='real' name='[Gross_Profit_Margin]' role='measure' type='quantitative' />
+      <column caption='Interest Expense Ratio' datatype='real' name='[Interest_Expense_Ratio]' role='measure' type='quantitative' />
+      <column caption='Net Profit Margin' datatype='real' name='[Net_Profit_Margin]' role='measure' type='quantitative' />
+      <column caption='Operating Expense Ratio' datatype='real' name='[Operating_Expense_Ratio]' role='measure' type='quantitative' />
+      <column caption='Operating Profit Margin' datatype='real' name='[Operating_Profit_Margin]' role='measure' type='quantitative' />
+      <column caption='Tax Provision Ratio' datatype='real' name='[Tax_Provision_Ratio]' role='measure' type='quantitative' />
+      <column caption='all_analysis_data' datatype='table' name='[__tableau_internal_object_id__].[all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E]' role='measure' type='quantitative' />
+      <column caption='company_info' datatype='table' name='[__tableau_internal_object_id__].[company_info_0A8DA06014014D26980A54CF097B2ED3]' role='measure' type='quantitative' />
+      <column caption='Company Name' datatype='string' name='[company_name]' role='dimension' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='Date' />
+        <field-sort-custom-order field='Calculation_1099303263416320' />
+        <field-sort-custom-order field='Ticker' />
+        <field-sort-custom-order field='Total Revenue' />
+        <field-sort-custom-order field='Cost of Revenue' />
+        <field-sort-custom-order field='Calculation_1987435430539266' />
+        <field-sort-custom-order field='Gross Profit' />
+        <field-sort-custom-order field='Operating Expense' />
+        <field-sort-custom-order field='Operating Income' />
+        <field-sort-custom-order field='Interest Expense' />
+        <field-sort-custom-order field='Tax Provision' />
+        <field-sort-custom-order field='Net Income' />
+        <field-sort-custom-order field='Gross_Profit_Margin' />
+        <field-sort-custom-order field='Operating_Profit_Margin' />
+        <field-sort-custom-order field='Net_Profit_Margin' />
+        <field-sort-custom-order field='Cost_of_Revenue_Ratio' />
+        <field-sort-custom-order field='Operating_Expense_Ratio' />
+        <field-sort-custom-order field='Interest_Expense_Ratio' />
+        <field-sort-custom-order field='Tax_Provision_Ratio' />
+        <field-sort-custom-order field='Operating Cash Flow' />
+        <field-sort-custom-order field='Free Cash Flow' />
+        <field-sort-custom-order field='Calculation_1987435428253696' />
+        <field-sort-custom-order field='Cash_Conversion_Ratio' />
+        <field-sort-custom-order field='Free_Cash_Flow_Ratio' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='all_analysis_data' id='all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E'>
+            <properties context=''>
+              <relation connection='duckdb_jdbc.07ob9ma05ewqgd1fhrk6b0lp5k9y' name='all_analysis_data' table='[fundamental_analysis].[main].[all_analysis_data]' type='table' />
+            </properties>
+          </object>
+          <object caption='company_info' id='company_info_0A8DA06014014D26980A54CF097B2ED3'>
+            <properties context=''>
+              <relation connection='duckdb_jdbc.07ob9ma05ewqgd1fhrk6b0lp5k9y' name='company_info' table='[fundamental_analysis].[main].[company_info]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Ticker]' />
+              <expression op='[Ticker (company_info)]' />
+            </expression>
+            <first-end-point object-id='all_analysis_data_5F70A0FB87174995A9A1191BEE4AE08E' />
+            <second-end-point is-db-set-unique-key='true' object-id='company_info_0A8DA06014014D26980A54CF097B2ED3' unique-key='true' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s'>
+      <datasources>
+        <datasource caption='all_analysis_data+ (main)' name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s'>
+        <column datatype='string' name='[Ticker]' role='dimension' type='nominal' />
+        <column-instance column='[Ticker]' derivation='None' name='[none:Ticker:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Ticker:nk]' member='&quot;TGT&quot;' />
+          <groupfilter function='member' level='[none:Ticker:nk]' member='&quot;WMT&quot;' />
+        </groupfilter>
+        <target field='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_analysis_data+ (main)' name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s'>
+            <column datatype='integer' name='[Cost of Revenue]' role='measure' type='quantitative' />
+            <column datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Net Income]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Tax Provision]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ticker]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Ticker]' derivation='None' name='[none:Ticker:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Cost of Revenue]' derivation='Sum' name='[pcdf:sum:Cost of Revenue:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Net Income]' derivation='Sum' name='[pcdf:sum:Net Income:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Tax Provision]' derivation='Sum' name='[pcdf:sum:Tax Provision:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Total Revenue]' derivation='Sum' name='[pcdf:sum:Total Revenue:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[Date]' derivation='Quarter' name='[qr:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Date]' derivation='Quarter-Trunc' name='[tqr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[qr:Date:ok]'>
+            <groupfilter function='level-members' level='[qr:Date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]</column>
+            <column>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[qr:Date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Total Revenue:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Net Income:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Cost of Revenue:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Tax Provision:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>([federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Total Revenue:qk] + ([federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Net Income:qk] + ([federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Cost of Revenue:qk] + [federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[pcdf:sum:Tax Provision:qk])))</rows>
+        <cols>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[tqr:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{CB85177D-86A1-414B-84E8-9C91889F3970}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_analysis_data+ (main)' name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s'>
+            <column datatype='string' name='[Ticker]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Ticker]' derivation='None' name='[none:Ticker:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Revenue]' derivation='Sum' name='[sum:Total Revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='92' />
+            <format attr='width' value='240' />
+            <format attr='text-align' field='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Total Revenue:qk]' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Total Revenue:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Total Revenue:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Total Revenue:qk]' />
+              <text column='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Total Revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{ECA6FAFB-9E7C-477A-ABB1-720D15B34286}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_analysis_data+ (main)' name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s'>
+            <column datatype='string' name='[Ticker]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Total Revenue]' derivation='Avg' name='[avg:Total Revenue:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Ticker]' derivation='None' name='[none:Ticker:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[avg:Total Revenue:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2918DCB5-561B-468B-AC3C-E733A90A84C7}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_analysis_data+ (main)' name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s'>
+            <column datatype='date' datatype-customized='true' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Net Income]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Ticker]' role='dimension' type='nominal' />
+            <column-instance column='[Ticker]' derivation='None' name='[none:Ticker:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Net Income]' derivation='Sum' name='[sum:Net Income:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Quarter-Trunc' name='[tqr:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Net Income:qk]</rows>
+        <cols>[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[tqr:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{048A24FF-15FD-4E88-9861-99AC4EB2E252}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='all_analysis_data+ (main)' name='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1ikxuqo0gw9q8y1cpxdqu1355m6s'>
+        <column datatype='string' name='[Ticker]' role='dimension' type='nominal' />
+        <column-instance column='[Ticker]' derivation='None' name='[none:Ticker:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='13' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='10' param='horz' type-v2='layout-flow' w='82400' x='800' y='1000'>
+              <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='82400' x='800' y='1000'>
+                <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+                  <zone h='49000' id='3' name='Sheet 3' w='41200' x='800' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49000' id='11' name='Sheet 2' w='82400' x='800' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49000' id='15' name='Sheet 4' w='41200' x='42000' y='1000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='12' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='21750' id='14' name='Sheet 2' param='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]' type-v2='filter' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3000' id='16' name='Sheet 4' pane-specification-id='0' param='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Cost of Revenue:qk]' type-v2='color' w='16000' x='83200' y='22750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CB86E9AB-89C1-494D-9FB3-58E151E7D31B}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='37'>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[qr:Date:ok]' type='filter' />
+            <card param='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{38E9225A-2F36-4904-95E6-7A0183549B76}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[sum:Total Revenue:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9F6AB192-7CC5-4635-9A45-AACD0A6A1349}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2822A979-12BC-411C-955E-74659221E8F2}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3' />
+        <viewpoint name='Sheet 4' />
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{15385452-7879-4B9D-824F-FCCCE6D10F9C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1ikxuqo0gw9q8y1cpxdqu1355m6s].[none:Ticker:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4FDD1D4-8205-4739-860C-A253AEE2409A}' />
+    </window>
+  </windows>
+</workbook>
